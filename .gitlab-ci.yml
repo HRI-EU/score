@@ -43,7 +43,7 @@ variables:
     REQUESTS_CA_BUNDLE: /usr/local/share/ca-certificates/HRI-CA_cert.crt
 
 default:
-    image: hri-gitlab.honda-ri.de:5050/gitlabrunner/buildcontainers/hri-eu-main:latest
+    image: dmz-gitlab.honda-ri.de:5050/gitlabrunner/buildcontainers/hri-eu-main:latest
 
 create venv:
     stage: venv

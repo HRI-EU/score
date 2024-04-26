@@ -1,0 +1,29 @@
+[tool.black]
+line-length = 120
+#force-exclude = '''
+#/(
+#    example/path
+#)/
+#'''
+
+[tool.pylint.main]
+ignore = ["venv", "tests", "mock", "setup.py", "pkgInfo.py"]
+#ignore-paths = ["^venv$"]
+
+[tool.pylint.messages_control]
+max-line-length = 120
+disable = [
+    "import-error",
+    "logging-fstring-interpolation",
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "missing-module-docstring",
+    "no-member",
+    "no-name-in-module",
+    "too-many-instance-attributes",
+]
+enable = ["useless-suppression"]
+argument-rgx = "[a-z_][a-z0-9_]{0,34}$"
+attr-rgx = "[a-z_][a-z0-9_]{1,34}$"
+const-rgx = "[A-Za-z_][A-Za-z0-9_]{1,34}$"
+variable-rgx = "[a-z_][a-z0-9_]{0,34}$"

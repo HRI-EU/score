@@ -1,0 +1,17 @@
+numpy>=1.23.0
+pandas
+matplotlib
+seaborn
+
+# For code formatting.
+black==23.9.1
+
+# For static code analysis.
+pylint~=3.0.1
+mypy~=1.9.0
+pandas-stubs
+
+# For unit testing.
+pytest-cov==4.1.0
+pytest-mock==3.11.1
+pytest==7.4.2

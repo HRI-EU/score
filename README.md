@@ -67,12 +67,12 @@ or change the plot type:
 ./scripts/plot_csv.py data/bayes_2_classes.csv -t pie -o correct_last -a correct_center
 ```
 
-The internal **evaluate_confusion** has the option:
-- **condense_errors**: Whether to treat all wrong predictions of a ground truth class as a single confusion case. 
+The internal **evaluate_confusion** function has the option:
+- **condense_errors**: Whether to treat all wrong predictions of a ground truth class as a single confusion case.
   This is helpful for settings with more than 2 classes. **[True, False]**
 
-<img src="doc/bayes_3_classes_stack_ordered_aligned_normalized.png" alt="Example stack plot" width="45%"/>
-<img src="doc/bayes_3_classes_stack_ordered_aligned_normalized_condensed.png" alt="Example normalized stack plot" width="45%"/>
+<img src="doc/bayes_3_classes_stack_ordered_aligned_normalized.png" alt="Example stack plot with many confusions" width="45%"/>
+<img src="doc/bayes_3_classes_stack_ordered_aligned_normalized_condensed.png" alt="Example stack plot with condensed confusions" width="45%"/>
 
 ```bash
 # The commands used to generate these plots were (except placement of the legend):    
@@ -98,5 +98,5 @@ The internal **evaluate_confusion** has the option:
 - Precision-reject-curves and recall-reject-curves:
   - L. Fischer and P. Wollstadt. Precision and Recall Reject Curves. Accepted for WSOM, 2024.
 - Accuracy-reject-curves:
-  - M. S. A. Nadeem, J. D. Zucker, and B. Hanczar. Accuracy-rejection curves (ARCs) for 
-  comparing classification methods with a reject option. In Machine Learning in Systems Biology, pages 65-81, PMLR, 2009.
+  - M. S. A. Nadeem, J. D. Zucker, and B. Hanczar. Accuracy-rejection curves (ARCs) for
+    comparing classification methods with a reject option. In Machine Learning in Systems Biology, pages 65-81, PMLR, 2009.

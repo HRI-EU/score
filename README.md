@@ -1,8 +1,5 @@
 # confusion_reject_plot
 
-[![pipeline status](https://hri-gitlab.honda-ri.de/lfischer/confusion_reject_plot/badges/main/pipeline.svg)](https://hri-gitlab.honda-ri.de/lfischer/confusion_reject_plot/-/commits/main)
-[![coverage](https://hri-gitlab.honda-ri.de/lfischer/confusion_reject_plot/badges/main/coverage.svg)](https://hri-gitlab.honda-ri.de/lfischer/confusion_reject_plot/-/commits/noetic)
-
 This project offers to do reject plots using stacked confusion counts.
 This gives more insight than using standard accuracy-reject-curves.
 

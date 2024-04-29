@@ -30,15 +30,13 @@
 #
 #
 
-from .data import read_data, gaussian_clusters
-from .certainty_measures import bayes_confidence
+from .data import read_data
 from .plot import (
     evaluate_confusion,
     plot,
     plot_pie,
     plot_stack,
     plot_reject_curves,
-    plot_class_data,
     Order,
     Alignment,
     Type,

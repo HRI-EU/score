@@ -131,28 +131,6 @@ def evaluate_confusion(data: pandas.DataFrame, condense_errors: bool = False) ->
     return data
 
 
-def plot_class_data(data: pandas.DataFrame) -> None:
-    """
-    Plot some Gaussian data.
-
-    :param data: A dataframe containing some Gaussian data.
-    :return:
-    """
-    ax = None
-    for label in data.ground_truth.unique():
-        ax = data.loc[data.ground_truth == label, ["x", "y"]].plot(
-            x="x", y="y", marker="+", linestyle="none", ax=ax, label=f"data points of class {label}"
-        )
-        data.loc[data.ground_truth == label, ["mu_x", "mu_y"]].plot(
-            x="mu_x", y="mu_y", marker="s", linestyle="none", ax=ax, label=f"Gaussian centers of class {label}"
-        )
-    ax.set_xlabel("x")
-    ax.set_ylabel("y")
-    ax.axis("equal")
-    ax.set_title("data points")
-    plt.show()
-
-
 def plot(data: pandas.DataFrame, plot_type: Type, **kwargs) -> None:
     if plot_type == Type.PIE:
         plot_pie(

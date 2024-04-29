@@ -35,7 +35,6 @@
 
 from __future__ import annotations
 
-import numpy
 import pandas
 
 
@@ -46,26 +45,3 @@ def read_data(file_path: str) -> pandas.DataFrame:
             raise AssertionError(f"Missing column '{required_column}' in '{file_path}'.")
 
     return data
-
-
-def create_gauss_data(mu: list, sigma: list, label: int, number: int) -> pandas.DataFrame:
-    x = numpy.random.default_rng().normal(mu[0], sigma[0], size=(1, number))[0]
-    y = numpy.random.default_rng().normal(mu[1], sigma[1], size=(1, number))[0]
-
-    data = pandas.DataFrame(
-        {
-            "x": x,
-            "y": y,
-            "ground_truth": numpy.array([label] * number),
-            "mu_x": mu[0] * numpy.ones([number]),
-            "mu_y": mu[1] * numpy.ones([number]),
-            "sigma_x": sigma[0] * numpy.ones([number]),
-            "sigma_y": sigma[1] * numpy.ones([number]),
-        }
-    )
-    return data
-
-
-def gaussian_clusters(definitions: list[dict]) -> pandas.DataFrame:
-    data = [create_gauss_data(**definition) for definition in definitions]
-    return pandas.concat(data, ignore_index=True, axis=0)

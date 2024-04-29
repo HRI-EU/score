@@ -44,4 +44,4 @@ else
     printf "*** For applying format inplace start with './ci-format.sh --apply' ***\n\n"
 fi
 
-black . --required-version "23.9.1" ${BLACK_ADDITIONAL_ARG:+"${BLACK_ADDITIONAL_ARG}"}
+black . --required-version "24.4.2" ${BLACK_ADDITIONAL_ARG:+"${BLACK_ADDITIONAL_ARG}"}

@@ -4,7 +4,7 @@ matplotlib
 seaborn
 
 # For code formatting.
-black==23.9.1
+black==24.4.2
 
 # For static code analysis.
 pylint~=3.0.1

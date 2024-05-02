@@ -1,6 +1,6 @@
-# confusion_reject_plot
+# score
 
-This project offers to do reject plots using stacked confusion counts.
+This project offers to do Stacked Confusion Reject (SCORE) plots to visualize classification with reject option.
 This gives more insight than using standard accuracy-reject-curves.
 
 <img src="doc/bayes_2_classes_reject.png" alt="Example reject plot" width="45%"/>
@@ -90,8 +90,8 @@ The internal **evaluate_confusion** function has the option:
 
 
 # References:
-- Confusion-reject-plots:
-  - S. Hasler and L. Fischer. Stacked Confusion Reject Plots. Submitted to ESANN, 2024.
+- Stacked Confusion Reject Plots:
+  - S. Hasler and L. Fischer. Stacked Confusion Reject Plots (SCORE). Submitted to ESANN, 2024.
 - Precision-reject-curves and recall-reject-curves:
   - L. Fischer and P. Wollstadt. Precision and Recall Reject Curves. Accepted for WSOM, 2024.
 - Accuracy-reject-curves:

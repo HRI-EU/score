@@ -36,7 +36,7 @@
 
 import argparse
 
-from confusion_reject_plot import read_data, evaluate_confusion, plot, Order, Alignment, Type
+from score import read_data, evaluate_confusion, plot, Order, Alignment, Type
 
 
 plot_definitions = [

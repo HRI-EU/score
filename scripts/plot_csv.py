@@ -37,7 +37,7 @@
 import argparse
 import enum
 
-from confusion_reject_plot import read_data, evaluate_confusion, plot, Order, Alignment, Type
+from score import read_data, evaluate_confusion, plot, Order, Alignment, Type
 
 
 class EnumAction(argparse.Action):

@@ -37,7 +37,7 @@
 import pandas
 import numpy
 
-from confusion_reject_plot import evaluate_confusion, plot_pie, plot_stack, plot_reject_curves, Order, Alignment
+from score import evaluate_confusion, plot_pie, plot_stack, plot_reject_curves, Order, Alignment
 
 
 def main():

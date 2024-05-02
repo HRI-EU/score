@@ -41,6 +41,6 @@ python -m pytest \
     --cov-report=term \
     --cov-report=html \
     --cov-report=xml \
-    --cov=src/confusion_reject_plot \
+    --cov=src/score \
     --junitxml junit-report.xml \
     tests "$@"

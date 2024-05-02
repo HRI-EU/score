@@ -36,7 +36,7 @@
 
 import pytest
 
-from confusion_reject_plot import evaluate_confusion
+from score import evaluate_confusion
 
 
 def test_transform_data_type_failure():

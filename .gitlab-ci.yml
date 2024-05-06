@@ -36,7 +36,6 @@ stages:
     - venv
     - check
     - test
-    - quality assurance
 
 variables:
     PIP_INDEX_URL: https://cicd-pkg-reg.honda-ri.de/repository/pypi-proxy/simple

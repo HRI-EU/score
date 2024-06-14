@@ -90,8 +90,6 @@ The internal **evaluate_confusion** function has the option:
 
 
 # References:
-- Stacked Confusion Reject Plots:
-  - S. Hasler and L. Fischer. Stacked Confusion Reject Plots (SCORE). Submitted to ESANN, 2024.
 - Precision-reject-curves and recall-reject-curves:
   - L. Fischer and P. Wollstadt. Precision and Recall Reject Curves. Accepted for WSOM, 2024.
 - Accuracy-reject-curves:

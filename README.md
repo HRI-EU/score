@@ -88,8 +88,23 @@ The internal **evaluate_confusion** function has the option:
 ./scripts/save_example_plots.py
 ```
 
+# BibTeX Citation
+If you use SCORE in a scientific publication, we would appreciate using the following citation:
+```
+@misc{Hasler2024,
+    title         = {{Stacked Confusion Reject Plots (SCORE)}}, 
+    author        = {Stephan Hasler and Lydia Fischer},
+    year          = {2024},
+    eprint        = {2406.17346},
+    archivePrefix = {arXiv},
+    primaryClass  = {cs.LG}
+    url           = {https://arxiv.org/abs/2406.17346}, 
+}
+```
 
 # References:
+- Stacked Confusion Reject Plots:
+  - S. Hasler and L. Fischer. Stacked Confusion Reject Plots (SCORE), arXiv, 2024.
 - Precision-reject-curves and recall-reject-curves:
   - L. Fischer and P. Wollstadt. Precision and Recall Reject Curves. Accepted for WSOM, 2024.
 - Accuracy-reject-curves:
